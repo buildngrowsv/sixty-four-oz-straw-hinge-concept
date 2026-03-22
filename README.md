@@ -8,11 +8,12 @@ Open `SixtyFourOunceFlexibleJointStrawBottleConceptAnimation.html` in a browser 
 
 ## Publication (Pubroot)
 
-This work is **not** manually embedded in the Pubroot static site. It was submitted for the normal AI peer review pipeline:
+Published on Pubroot after peer review:
 
-- **Submission issue:** [pubroot-website#8](https://github.com/buildngrowsv/pubroot-website/issues/8)
+- **Article:** [pubroot.com/2026-008/article/](https://pubroot.com/2026-008/article/)
+- **Submission issue (history):** [pubroot-website#8](https://github.com/buildngrowsv/pubroot-website/issues/8)
 
-If accepted, Pubroot will publish it through the standard `papers/` flow. Until then, use this repo or a local copy of the HTML.
+A **three-panel screenshot** from the interactive demo is in `figures/straw-demo-three-panel-bottles.png` (same asset as on the article page).
 
 ## Repository
 

@@ -6,13 +6,14 @@ Static concept package: interactive 2D comparison (cap flex vs rigid straw vs mi
 
 Open `SixtyFourOunceFlexibleJointStrawBottleConceptAnimation.html` in a browser (double-click or “Open with”). Assets use relative paths; keep this folder together.
 
-## Published on Pubroot
+## Live URLs
 
-When deployed with the [pubroot-website](https://github.com/buildngrowsv/pubroot-website) repo, this demo is served from:
+- **Pubroot (this package is deployed from [pubroot-website](https://github.com/buildngrowsv/pubroot-website)):**  
+  [https://pubroot.com/demos/64oz-straw-hinge-concept/](https://pubroot.com/demos/64oz-straw-hinge-concept/)  
+  `index.html` redirects to the main animation file.
 
-**https://pubroot.com/demos/64oz-straw-hinge-concept/**
-
-(Entry `index.html` forwards to the main HTML file.)
+- **Standalone source repo:**  
+  [https://github.com/buildngrowsv/sixty-four-oz-straw-hinge-concept](https://github.com/buildngrowsv/sixty-four-oz-straw-hinge-concept)
 
 ## License
 

@@ -6,14 +6,17 @@ Static concept package: interactive 2D comparison (cap flex vs rigid straw vs mi
 
 Open `SixtyFourOunceFlexibleJointStrawBottleConceptAnimation.html` in a browser (double-click or “Open with”). Assets use relative paths; keep this folder together.
 
-## Live URLs
+## Publication (Pubroot)
 
-- **Pubroot (this package is deployed from [pubroot-website](https://github.com/buildngrowsv/pubroot-website)):**  
-  [https://pubroot.com/demos/64oz-straw-hinge-concept/](https://pubroot.com/demos/64oz-straw-hinge-concept/)  
-  `index.html` redirects to the main animation file.
+This work is **not** manually embedded in the Pubroot static site. It was submitted for the normal AI peer review pipeline:
 
-- **Standalone source repo:**  
-  [https://github.com/buildngrowsv/sixty-four-oz-straw-hinge-concept](https://github.com/buildngrowsv/sixty-four-oz-straw-hinge-concept)
+- **Submission issue:** [pubroot-website#8](https://github.com/buildngrowsv/pubroot-website/issues/8)
+
+If accepted, Pubroot will publish it through the standard `papers/` flow. Until then, use this repo or a local copy of the HTML.
+
+## Repository
+
+[https://github.com/buildngrowsv/sixty-four-oz-straw-hinge-concept](https://github.com/buildngrowsv/sixty-four-oz-straw-hinge-concept)
 
 ## License
 
@@ -21,4 +24,4 @@ Concept / educational visuals. Confirm licensing with the project owner before c
 
 ## Syncing changes
 
-Edits are authored in the working copy under `Personal Agent`; to refresh this repo or Pubroot static files, copy `SixtyFourOunceFlexibleJointStrawBottleConceptAnimationDemos/` again or maintain this repo as the source of truth and pull back into other trees as needed.
+Edits are often authored under `Personal Agent/.../SixtyFourOunceFlexibleJointStrawBottleConceptAnimationDemos/`. Copy that folder here and commit when the demo changes; bump the commit SHA in any open Pubroot submission if reviewers need a new pin.

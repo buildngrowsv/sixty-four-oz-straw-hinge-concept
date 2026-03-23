@@ -1956,6 +1956,54 @@
         autoDemo = false;
       });
 
+      /*
+       * ---------------------------------------------------------------------------
+       * Optional URL query params for reproducible screenshots and CI captures
+       * ---------------------------------------------------------------------------
+       * Reviewers and authors often need the same frame without hand-dragging the
+       * tilt slider. Example:
+       *   ...Animation.html?tilt=78&fill=62
+       * tilt:  -180..180 (clamped) — strong positive values tip the bottle toward a
+       *         typical drink posture so the three straw stories diverge visually.
+       * fill:  8..100 (clamped) — slightly higher fill keeps a believable pool when
+       *         the vessel is heavily tilted.
+       * bottomGap / midHinge: optional integers, same ranges as the sliders.
+       * We force autoDemo off so the sine sweep does not overwrite the requested tilt.
+       * ---------------------------------------------------------------------------
+       */
+      (function applyInitialQueryParamsForScreenshotAndReview() {
+        try {
+          const q = new URLSearchParams(window.location.search);
+          if (q.has("tilt")) {
+            const v = Number(q.get("tilt"));
+            if (!Number.isNaN(v)) {
+              tiltInput.value = String(Math.round(Math.max(-180, Math.min(180, v))));
+            }
+          }
+          if (q.has("fill")) {
+            const v = Number(q.get("fill"));
+            if (!Number.isNaN(v)) {
+              fillInput.value = String(Math.round(Math.max(8, Math.min(100, v))));
+            }
+          }
+          if (q.has("bottomGap")) {
+            const v = Number(q.get("bottomGap"));
+            if (!Number.isNaN(v)) {
+              bottomGapInput.value = String(Math.round(Math.max(0, Math.min(200, v))));
+            }
+          }
+          if (q.has("midHinge")) {
+            const v = Number(q.get("midHinge"));
+            if (!Number.isNaN(v)) {
+              midHingeFracInput.value = String(Math.round(Math.max(18, Math.min(82, v))));
+            }
+          }
+        } catch (_) {
+          /* Non-browser or restricted URL — ignore */
+        }
+        autoDemo = false;
+      })();
+
       requestAnimationFrame(frame);
     })();
   </script>

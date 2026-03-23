@@ -13,7 +13,7 @@ Published on Pubroot after peer review:
 - **Article:** [pubroot.com/2026-008/article/](https://pubroot.com/2026-008/article/)
 - **Submission issue (history):** [pubroot-website#8](https://github.com/buildngrowsv/pubroot-website/issues/8)
 
-A **three-panel screenshot** from the interactive demo is in `figures/straw-demo-three-panel-bottles.png` (same asset as on the article page). It is captured at a **strong drink tilt** (~84°) via `SixtyFourOunceFlexibleJointStrawBottleConceptAnimation.html?tilt=84&fill=66` so the gravity-hinged straws read clearly against the lid-rigid straw.
+A **three-panel screenshot** from the interactive demo is in `figures/straw-demo-three-panel-bottles.png` (same asset as on the article page). It is captured at **85° drink tilt** via `SixtyFourOunceFlexibleJointStrawBottleConceptAnimation.html?tilt=85&fill=66` (sliders visible in-frame) so pendulum straws clearly reach the pool while the lid-rigid straw does not. To iterate angles locally, use Playwright and the clip script in `pubroot-website` `_cli/capture_straw_compare_screenshot_for_publication.mjs`.
 
 ## Repository
 

@@ -13,7 +13,7 @@ Published on Pubroot after peer review:
 - **Article:** [pubroot.com/2026-008/article/](https://pubroot.com/2026-008/article/)
 - **Submission issue (history):** [pubroot-website#8](https://github.com/buildngrowsv/pubroot-website/issues/8)
 
-A **three-panel screenshot** from the interactive demo is in `figures/straw-demo-three-panel-bottles.png` (same asset as on the article page). It is captured at **85° drink tilt** via `SixtyFourOunceFlexibleJointStrawBottleConceptAnimation.html?tilt=85&fill=66` (sliders visible in-frame) so pendulum straws clearly reach the pool while the lid-rigid straw does not. To iterate angles locally, use Playwright and the clip script in `pubroot-website` `_cli/capture_straw_compare_screenshot_for_publication.mjs`.
+A **three-panel screenshot** from the interactive demo is in `figures/straw-demo-three-panel-bottles.png` (same asset as on the article page). It is captured at **85° drink tilt** and **10% fill** via `SixtyFourOunceFlexibleJointStrawBottleConceptAnimation.html?tilt=85&fill=10` (sliders visible in-frame) so a **small liquid pool** makes the reach problem obvious: pendulum straws hunt the corner puddle while the lid-rigid straw misses. To iterate angles or fill locally, use Playwright and the clip script in `pubroot-website` `_cli/capture_straw_compare_screenshot_for_publication.mjs`.
 
 ## Repository
 
